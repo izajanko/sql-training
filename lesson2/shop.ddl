@@ -8,7 +8,7 @@ USE lesson2;
 # Table creation
 CREATE TABLE IF NOT EXISTS user(
     id                      INT             NOT NULL        AUTO_INCREMENT,
-    login                   VARCHAR(15)     NOT NULL        UNIQUE,
+    login                   VARCHAR(36)     NOT NULL        UNIQUE,
     registration_date       TIMESTAMP       NOT NULL        DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY (id)
 );
