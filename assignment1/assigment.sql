@@ -104,7 +104,7 @@ SELECT 1;
 
 # Find 5 top (by number of sold items) selling products
 # Expected result
-# name,sold_itmes
+# name,sold_items
 # konsola xbox series x,5
 # telewizor samsung QE,5
 # telefon iphone 13 5g,4
@@ -116,14 +116,14 @@ SELECT 1;
 # Find how many users bought each product
 # Hint: check out count distinct aggregation
 # Expected result
-# name,count(*),unique_users
-# konsola xbox series s,3,3
-# telefon iphone 13 5g,3,3
-# telewizor samsung QE,4,3
-# konsola playstation 5,2,2
-# konsola xbox series x,2,2
-# telefon samsung A52,1,1
-# telefon samsung S21 FE,1,1
+# name,unique_users
+# konsola xbox series s,3
+# telefon iphone 13 5g,3
+# telewizor samsung QE,3
+# konsola playstation 5,2
+# konsola xbox series x,2
+# telefon samsung A52,1
+# telefon samsung S21 FE,1
 
 SELECT 1;
 
