@@ -32,8 +32,6 @@ SELECT * FROM user;
 
 
 # Join tables
-
-
 SELECT
     u.id as user_id,
     u.login,
