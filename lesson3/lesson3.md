@@ -1,6 +1,6 @@
 ## MySQL
 
-###Schema creation
+### Schema creation
 ```mysql
 CREATE DATABASE IF NOT EXISTS shop;
 ```
