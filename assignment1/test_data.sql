@@ -32,16 +32,15 @@ VALUES
 
 INSERT INTO transaction(id, user_id, transaction_date, payment_method, delivery_method) VALUES
     (1, 1, '2022-02-06 10:00:00', 'blik', 'dhl'),
-    (2, 1, '2022-02-07 10:00:00', 'przelew online', 'dhl'),
-    (3, 1, '2022-02-08 10:00:00', 'blik', 'inpost'),
-    (4, 2, '2022-02-07 10:00:00', 'blik', 'inpost'),
-    (5, 3, '2022-02-07 10:00:00', 'przelew online', 'inpost'),
-    (6, 6, '2022-02-08 10:00:00', 'gotówka', 'odbiór osobisty'),
-    (7, 7, '2022-02-06 10:00:00', 'gotówka', 'odbiór osobisty'),
-    (8, 7, '2022-02-07 10:00:00', 'blik', 'dhl'),
-    (9, 2, '2022-02-08 10:00:00', 'blik', 'inpost'),
-    (10, 2, '2022-02-08 10:00:00', 'blik', 'inpost');
-
+    (2, 1, '2022-02-07 12:00:00', 'przelew online', 'dhl'),
+    (3, 1, '2022-02-08 13:00:00', 'blik', 'inpost'),
+    (4, 2, '2022-02-07 14:00:00', 'blik', 'inpost'),
+    (5, 3, '2022-02-07 15:00:00', 'przelew online', 'inpost'),
+    (6, 6, '2022-02-08 16:00:00', 'gotówka', 'odbiór osobisty'),
+    (7, 7, '2022-02-06 11:00:00', 'gotówka', 'odbiór osobisty'),
+    (8, 7, '2022-02-07 12:00:00', 'blik', 'dhl'),
+    (9, 2, '2022-02-08 18:00:00', 'blik', 'inpost'),
+    (10, 2, '2022-02-08 13:00:00', 'blik', 'inpost');
 
 INSERT INTO transaction_item(transaction_id, offer_id, quantity) VALUES
     (1, 2, 2), (1, 9, 1),
