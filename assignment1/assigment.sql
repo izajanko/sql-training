@@ -310,15 +310,6 @@ order by revenue desc;
 # telefon samsung S21 FE,280.0000
 # telefon samsung A52,100.0000
 
-# Find...
-# SELECT
-#        o.name,
-#        o.price,
-#        count(*)
-# FROM offer o
-#     INNER JOIN category c on o.category_id = c.id
-#     INNER JOIN transaction_item ti on o.id = ti.offer_id
-# group by o.name,o.price;
 
 # BONUS
 # Find total revenue per manufacturer.
