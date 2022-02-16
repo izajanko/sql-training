@@ -3,8 +3,10 @@
 * UNIQUE - column values must have unique values
 * DEFAULT $value - set default value when value is not provided during insertion
 * Example of DECIMAL(4, 2): 34.54 // 4 - cyfry, 2 po przecinku
+* smallint: -2^15 (-32,768) to 2^15-1 (32,767)	
+* tinyint: 0 to 255
 
-### Join tables
+### Join tables - examples 
 ```mysql
 SELECT
     t.id as transaction_id,
@@ -29,10 +31,11 @@ INNER JOIN transaction_item ti on t.id = ti.transaction_id
 INNER JOIN offer o ON ti.offer_id = o.id;
 ```
 
-### co to?
+### Deleting data from table
 ```mysql
 DELETE FROM transaction WHERE 1 = 1;
 ```
+##### Without condition WHERE 1 = 1 operation could not be complete 
 
 ### SELECT
 ```mysql
@@ -52,7 +55,6 @@ select * from offer where name like '%phone%';
 select * from offer where  name like '%xbox%' and production_year > 2020;
 # Find all xboxes manufacturer after 2020 and iphones produced after 2015
 select * from offer where (name like '%xbox%' and production_year > 2020) or (name like '%iphone%' and production_year > 2015);
-
 ```
 ### Creating view - logical table. Data is not copied. You cannot add, update and delete rows from view
 ```mysql
