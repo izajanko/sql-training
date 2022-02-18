@@ -10,7 +10,6 @@ SELECT * FROM user WHERE email like '%gmail%';
 # ewelka | ewelka@gmail.pl | Białystok
 
 
-
 # Check how many users live in each city (without nulls). Result should be sorted by count
 # Check out: https://www.mysqltutorial.org/mysql-order-by/
 
